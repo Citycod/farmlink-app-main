@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cartItemsContainer.appendChild(cartRow);
   }
 
-  function updateTotal() {
+  function updateTotal() {  
     let total = 0;
     const savedItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     savedItems.forEach((item) => {
