@@ -1,0 +1,50 @@
+
+#loader::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    border: 2px solid #4B5563; 
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-slideDown {
+    animation: slideDown 0.6s ease-out;
+  }  
+  
+  .product-card img {
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .fi {
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover .fi {
+    transform: scale(1.1);
+  }
+  #searchInput:focus {
+    outline: none;
+    border-color: #10B981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+  }
+  
+
+  #noProducts, #loader {
+    font-size: 1rem;
+  }
+  
